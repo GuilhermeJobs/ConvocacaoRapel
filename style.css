@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQet2OnlpUZWqLyWA_rfYRWRwpeETQFFDSuJw&s') no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.convite {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 25px rgba(0,0,0,0.9);
+    animation: fadeIn 1.2s ease;
+}
+
+h1 {
+    font-size: 2.1em;
+    color: #4CAF50;
+    text-shadow: 0 0 8px #000;
+}
+
+.info, .incluso {
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.incluso {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.incluso h3 {
+    color: #ffd700;
+}
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #45a049;
+}
+
+button.nao {
+    background: #d9534f;
+}
+
+button.nao:hover {
+    background: #c9302c;
+}
+
+.mensagem {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: none;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
